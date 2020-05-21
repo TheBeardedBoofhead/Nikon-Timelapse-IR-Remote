@@ -37,23 +37,23 @@ while (set_test < 5) {
   exp_delay_set_test(); // Call the test for whether the set button has been pressed
   set_test = set_test +1;
   if (exp_delay == 1) {
-    analogWrite(delay_led1, 15); // Turn on the corresponding LED to the exposure delay setting - If the set button isn't pressed, the default mode is used (1.5 seconds)
+    digitalWrite(delay_led1, HIGH); // Turn on the corresponding LED to the exposure delay setting - If the set button isn't pressed, the default mode is used (1.5 seconds)
     exp_delay_time = 4000;
       }
   if (exp_delay == 2) {
-    analogWrite(delay_led2, 15); // etc etc
+    digitalWrite(delay_led2, HIGH); // etc etc
     exp_delay_time = 6000;
       }
   if (exp_delay == 3) {
-    analogWrite(delay_led3, 15); // etc etc
+    digitalWrite(delay_led3, HIGH); // etc etc
     exp_delay_time = 11000;
       }
   if (exp_delay == 4) {
-    analogWrite(delay_led4, 15); // etc etc
+    digitalWrite(delay_led4, HIGH); // etc etc
     exp_delay_time = 21000;
       }
   if (exp_delay == 5) {
-    analogWrite(delay_led5, 15); // etc etc
+    digitalWrite(delay_led5, HIGH); // etc etc
     exp_delay_time = 31000;
       }
   
